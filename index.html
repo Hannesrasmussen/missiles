@@ -5,15 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Missiles</title>
     <link rel="stylesheet" href="./public/stylesheet.css" />
+    <link rel="stylesheet" href="./public/modal.css" />
   </head>
   <body>
+    <div id="modal-wrapper">
+      <div id="modal-container" class="shake">
+        <div id="modal-header">
+          <div id="modal-header-1">
+            <img src="public/img/icons/warning.svg" class="modal-icon" />
+            <span>EMERGENCY ALERTS</span>
+          </div>
+          <span id="modal-header-2">now</span>
+        </div>
+        <div id="modal-body">
+          <span id="modal-rubrik">EMERGENCY ALERT</span>
+          <p id="modal-text">
+            BALLISTIC MISSILE THREAT INBOUND TO MALMÖ 14/6. <br />SEEK IMMEDIATE
+            SHELTER
+            <a href="https://medleymalmo.se/event/missiles-releasefest-support/"
+              >HERE</a
+            >.
+          </p>
+
+          <span id="modal-action" onclick="open('gigs.html')"
+            >click for more gigs</span
+          >
+        </div>
+      </div>
+    </div>
     <main>
       <header>
         <img id="logo" src="public/img/missiles-logo.png" />
       </header>
       <nav>
         <img class="nav-item" src="public/img/nav/Info.png" />
-        <img class="nav-item" src="public/img/nav/Merch.png" />
+        <a
+          target="_blank"
+          href="https://svartrecords.com/en/product/missiles-weaponize-tomorrow/12106"
+          ><img class="nav-item" src="public/img/nav/Merch.png"
+        /></a>
         <img class="nav-item" src="public/img/nav/Contact.png" />
         <img class="nav-item" src="public/img/nav/Gigs.png" />
       </nav>
@@ -174,16 +204,17 @@
 
       <span>Platforms</span>
       <nav>
-        <a href="svt.se"
+        <a
+          href="https://open.spotify.com/artist/6hWuTTVM1YzZ9JnwbY8PEy?si=L3nZ27iAQy2DRT7HfuHReQ"
           ><img class="icon" src="public/img/icons/spotify.svg"
         /></a>
-        <a href="svt.se"
+        <a href="https://soundcloud.com/missiles-music"
           ><img class="icon" src="public/img/icons/soundcloud.svg"
         /></a>
         <a href="svt.se"
           ><img class="icon" src="public/img/icons/youtube.svg"
         /></a>
-        <a href="svt.se"
+        <a href="https://www.facebook.com/missilesswe/"
           ><img class="icon" src="public/img/icons/meta.svg"
         /></a>
         <a href="svt.se"
