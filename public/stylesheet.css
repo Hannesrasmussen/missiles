@@ -52,13 +52,20 @@ body {
 
 p {
   line-height: 30px;
+  margin: 0;
 }
+.info-text {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 a {
   color: white;
   text-decoration: underline;
 }
-.red {
+#red {
   color: var(--primary);
+  margin-bottom: 20px;
 }
 
 h2 {
@@ -98,11 +105,9 @@ main {
   gap: 20px;
   max-width: 800px;
   min-width: 300px;
-  padding-bottom: 100px;
 
   background: rgb(16, 16, 16);
 
-  border-radius: 5px;
   padding: 30px;
 }
 
@@ -112,25 +117,57 @@ main {
   justify-content: center;
 }
 
-hr {
-  border-width: 1px;
+.video {
+  width: 100%;
+  height: 320px;
+  box-sizing: border-box;
+  margin: auto;
   border-style: solid;
-  border-color: var(--tertiary);
-
-  width: 75%;
+  border-width: 5px;
+  border-color: var(--primary);
 }
+
+.fake-hr {
+  width: 75%;
+  margin: auto;
+}
+
 img {
   user-select: none;
   -webkit-user-drag: none;
 }
 header {
   display: flex;
-  flex: row;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+  height: fit-content;
+  gap: 50px;
+
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgb(16, 16, 16, 0.9) 75%,
+      rgb(16, 16, 16, 1) 90%
+    ),
+    url(img/nav/header_bg.jpg);
+
+  background-size: cover;
+}
+#header-1 {
+  display: flex;
   height: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  width: 100%;
+  justify-content: right;
+  box-sizing: border-box;
+  padding: 20px;
+}
+#header-2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+#intro {
+  padding-top: 0;
 }
 
 nav {
@@ -142,7 +179,10 @@ nav {
 }
 .nav-item {
   width: auto;
-  height: 40px;
+  height: 50px;
+}
+.nav-item {
+  filter: drop-shadow(1px 1px 2px black);
 }
 .nav-item:hover {
   cursor: pointer;
@@ -162,16 +202,11 @@ nav a {
   justify-content: center;
   text-decoration: none;
 }
-a:hover {
-  transition: 0.2s;
-  transform: scale(0.95);
-  cursor: pointer;
-  color: rgb(185, 54, 157);
-}
 
 #logo {
   transition: 0.2s;
   width: 300px;
+  filter: drop-shadow(5px 5px 5px black);
 }
 :hover#logo {
   transition: 0.2s;
@@ -191,7 +226,6 @@ a:hover {
 }
 #band-members {
   padding: 20px;
-  padding-left: 40px;
 }
 #the-band {
   background-color: var(--secondary);
@@ -322,7 +356,26 @@ li {
     margin: 0;
     width: 100%;
   }
-  p {
-    padding: 10px;
+  #header-1 {
+    justify-content: right;
+  }
+  #logo {
+    width: 50%;
+  }
+  #header-2 {
+    height: 100px;
+  }
+  nav {
+    width: 75%;
+    justify-content: center;
+    gap: 20px;
+  }
+  .nav-item {
+    height: 40px;
+  }
+  .video {
+    width: 90%;
+    height: 300px;
+    margin: auto;
   }
 }

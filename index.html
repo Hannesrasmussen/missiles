@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Missiles</title>
+    <title>Missiles | Info</title>
     <link rel="stylesheet" href="./public/stylesheet.css" />
     <link rel="stylesheet" href="./public/modal.css" />
   </head>
@@ -26,45 +26,66 @@
               >HERE</a
             >.
           </p>
-
-          <span id="modal-action" onclick="open('gigs.html')"
-            >click for more gigs</span
-          >
+          <span id="modal-action">Click here for more gigs</span>
+          <div id="gigs-collapseable">
+            <div id="modal-gig">
+              <div><span class="modal-collapseable-date">14/99</span></div>
+              <div><span class="modal-collapseable-city">Malmö</span></div>
+              <div>
+                <span class="modal-collapseable-venue">Test aveneue</span>
+              </div>
+              <div class="modal-collapseable-tickets">
+                <a href="index.html">Buy tickets</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <main>
-      <header>
+    <header>
+      <div id="header-1">
         <img id="logo" src="public/img/missiles-logo.png" />
-      </header>
-      <nav>
-        <img class="nav-item" src="public/img/nav/Info.png" />
-        <a
-          target="_blank"
-          href="https://svartrecords.com/en/product/missiles-weaponize-tomorrow/12106"
-          ><img class="nav-item" src="public/img/nav/Merch.png"
-        /></a>
-        <img class="nav-item" src="public/img/nav/Contact.png" />
-        <img class="nav-item" src="public/img/nav/Gigs.png" />
-      </nav>
+      </div>
+      <div id="header-2">
+        <nav>
+          <a href="index.html">
+            <img class="nav-item" src="public/img/nav/Info.png" />
+          </a>
+
+          <a
+            target="_blank"
+            href="https://svartrecords.com/en/product/missiles-weaponize-tomorrow/12106"
+            ><img class="nav-item" src="public/img/nav/Merch.png"
+          /></a>
+          <a style="opacity: 10%">
+            <img class="nav-item" src="public/img/nav/Contact.png" />
+          </a>
+          <a>
+            <img class="nav-item" src="public/img/nav/Gigs.png" />
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main>
       <div class="content">
-        <p>
-          The members of MISSILES are no new kids on the block. Coming from
-          punk, rock, and metal, as well as surf and rather diverse backgrounds,
-          they all answered to the call of their good friend Gabriel Forslund -
-          sincerely interested in doing something new and exciting together. The
-          band's trajectory began with a 7" single released by the Swedish label
-          Fetish in 2016. Initially viewed as a project, MISSILES have
-          organically evolved into a fully dedicated band with a laser-guided
-          focus, causing shock waves in the underground with their jet-fuel
-          genre-clash. Combining abandoned sounds with new inventions on
-          “Weaponize Tomorrow”, MISSILES promises to both pat you on the head
-          and stab you in the back, delivering a unique blend of post-punk with
-          a touch of goth rock.
+        <p class="info-text">
+          The members of <b>MISSILES</b> are no new kids on the block. Coming
+          from punk, rock, and metal, as well as surf and rather diverse
+          backgrounds, they all answered to the call of their good friend
+          Gabriel Forslund - sincerely interested in doing something new and
+          exciting together. The band's trajectory began with a 7" single
+          released by the Swedish label Fetish in 2016. Initially viewed as a
+          project, <b>MISSILES</b> have organically evolved into a fully
+          dedicated band with a laser-guided focus, causing shock waves in the
+          underground with their jet-fuel genre-clash. Combining abandoned
+          sounds with new inventions on “Weaponize Tomorrow”,
+          <b>MISSILES</b> promises to both pat you on the head and stab you in
+          the back, delivering a unique blend of post-punk with a touch of goth
+          rock.
         </p>
       </div>
 
-      <hr />
+      <img class="fake-hr" src="public/img/thingies/hr-1.png" />
 
       <div class="content">
         <div id="album-element">
@@ -134,7 +155,7 @@
                   target="_blank"
                   href="https://open.spotify.com/artist/6hWuTTVM1YzZ9JnwbY8PEy?si=L3nZ27iAQy2DRT7HfuHReQ"
                 >
-                  <button>Soon on Spotify</button></a
+                  <button>Listen on Spotify</button></a
                 >
               </div>
             </div>
@@ -143,22 +164,28 @@
         </div>
       </div>
       <p>
-        MISSILES claim their debut is a one-of-a-kind album, truly a loved
-        bastard. ”Weaponize Tomorrow” will appeal to those who enjoyed the
+        <b>MISSILES</b> claim their debut is a one-of-a-kind album, truly a
+        loved bastard. ”Weaponize Tomorrow” will appeal to those who enjoyed the
         certain “je ne sais quoi” found in the New Wave movement, a line of
         thought that is liberating to hear today when artists go to the bank
-        with a genre description. MISSILES couldn't be bothered; it's rock, it's
+        with a genre description. The band couldn't be bothered; it's rock, it's
         pop, its punk, it's je ne sais quoi. Hard to pin down, but undeniable to
         freak out to, "Weaponize Tomorrow" is a high yield blast wave that will
-        leave MISSILES hot on the tongues of those looking for a sudden and
-        dramatic, incendiary kick. A gut smashing future shock that will
+        leave <b>MISSILES</b> hot on the tongues of those looking for a sudden
+        and dramatic, incendiary kick. A gut smashing future shock that will
         resonate across diverse musical landscapes, “Weaponize Tomorrow” will be
         the perfect atomic cocktail for fans of Wipers, Dead Moon, The Birthday
         Party, The Gun Club and even modern iconoclasts Molchat Doma and
         Beastmilk.
       </p>
+      <iframe
+        class="video"
+        src="https://www.youtube.com/embed/XcfYoaMRSH4"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
 
-      <hr />
+      <img class="fake-hr" src="public/img/thingies/hr-2.png" />
 
       <div class="content" id="the-band">
         <img
@@ -167,7 +194,7 @@
         />
 
         <ul id="band-members">
-          <span class="red">Missiles are..</span>
+          <span id="red"><b>MISSILES</b> are..</span>
           <li>
             <span class="name">Gabriel Forslund</span>
             <div class="about-fake-hr"></div>
@@ -200,7 +227,8 @@
           </li>
         </ul>
       </div>
-      <hr />
+
+      <img class="fake-hr" src="public/img/thingies/hr-3.png" />
 
       <span>Platforms</span>
       <nav>
