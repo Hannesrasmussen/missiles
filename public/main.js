@@ -6,7 +6,7 @@ const gigsCollapse = document.getElementById('gigs-collapseable');
 function init() {
   // Event Listeners
   modalWrapper.addEventListener('click', handleOutsideModalClick);
-  navItems[2].addEventListener('click', showModal);
+  navItems[3].addEventListener('click', showModal);
   moreGigsBtn.addEventListener('click', showMoreGigs);
 }
 

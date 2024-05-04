@@ -140,20 +140,20 @@ img {
 header {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   max-width: 800px;
-  height: fit-content;
-  gap: 50px;
+  height: 350px;
 
   background: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0) 0%,
-      rgb(16, 16, 16, 0.9) 75%,
-      rgb(16, 16, 16, 1) 90%
+      rgb(16, 16, 16, 0.9) 99%,
+      rgb(16, 16, 16, 1) 100%
     ),
     url(img/nav/header_bg.jpg);
 
-  background-size: cover;
+  background-size: contain;
 }
 #header-1 {
   display: flex;
@@ -170,12 +170,17 @@ header {
 #intro {
   padding-top: 0;
 }
+.header-nav {
+  transform: rotate(-2deg);
+  margin-right: 50px;
+}
 
 nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 40px;
+  gap: 30px;
+  margin-bottom: 15px;
   width: 100%;
 }
 .nav-item {
@@ -363,6 +368,9 @@ li {
   }
   #logo {
     width: 50%;
+  }
+  header {
+    background-size: cover;
   }
   #header-2 {
     height: 100px;
