@@ -368,7 +368,7 @@ li {
     height: 100px;
   }
   nav {
-    width: 75%;
+    width: 100%;
     justify-content: center;
     gap: 20px;
   }
