@@ -109,6 +109,7 @@ main {
   background: rgb(16, 16, 16);
 
   padding: 30px;
+  padding-bottom: 100px;
 }
 
 .content {
@@ -331,6 +332,7 @@ li {
   }
   main {
     padding: 0;
+    padding-bottom: 50px;
   }
   #album-element {
     border: none;
