@@ -1,5 +1,6 @@
 const modalWrapper = document.getElementById('modal-wrapper');
-const navItems = document.getElementsByClassName('nav-item');
+const navBar = document.getElementById('nav-bar');
+const navItems = navBar.children;
 const moreGigsBtn = document.getElementById('modal-action');
 const gigsCollapse = document.getElementById('gigs-collapseable');
 
