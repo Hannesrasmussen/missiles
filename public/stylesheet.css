@@ -113,6 +113,7 @@ main {
   background: var(--bg);
 
   padding: 30px;
+
   padding-bottom: 100px;
 }
 
@@ -163,15 +164,23 @@ header {
   position: relative;
   top: 0;
 }
+.header-hr {
+  width: 20%;
+  height: auto;
+}
 #nav-bar {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   background: var(--bg);
   gap: 30px;
+
+  box-sizing: border-box;
+  padding-top: 20px;
 }
 .nav-img {
-  height: 60px;
+  height: 40px;
 }
 
 .icon {
@@ -325,6 +334,7 @@ li {
   }
   main {
     padding: 0;
+    padding-top: 20px;
     padding-bottom: 50px;
   }
   #album-element {
@@ -373,12 +383,12 @@ li {
   }
   #nav-bar {
     height: 60px;
-    width: 80%;
+    width: 50%;
     gap: 20px;
     margin: auto;
   }
   .nav-img {
-    height: 45px;
+    height: 30px;
   }
   .video {
     width: 90%;
