@@ -5,6 +5,14 @@ const moreGigsBtn = document.getElementById('modal-action');
 const gigsCollapse = document.getElementById('gigs-collapseable');
 
 function init() {
+  // Force header to load first frame
+  let interval = setInterval(function () {
+    document.getElementById('header-img').src =
+      document.getElementById('header-img').src;
+  }, 1);
+  // Then clear the interval so the gif can play when it's loaded.
+  clearInterval(interval);
+
   // Event Listeners
   modalWrapper.addEventListener('click', handleOutsideModalClick);
   navItems[4].addEventListener('click', showModal);
@@ -16,7 +24,6 @@ function showModal() {
 }
 
 function handleOutsideModalClick(e) {
-  console.log(e.currentTarget);
   if (e.target.id === 'modal-wrapper') {
     e.currentTarget.style.display = 'none';
     gigsCollapse.style.display = 'none';
@@ -24,7 +31,6 @@ function handleOutsideModalClick(e) {
 }
 
 function showMoreGigs() {
-  console.log(gigsCollapse);
   gigsCollapse.style.display = 'block';
 }
 

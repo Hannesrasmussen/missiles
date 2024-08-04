@@ -9,29 +9,16 @@
   --bg: rgb(22, 19, 21);
 }
 
-/* Define the spinning keyframes */
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* Create the spinning class */
-.spin {
-  animation: spin 4s linear infinite;
-}
-
 html {
   font-family: Open sans;
   color: var(--tertiary);
 }
+
 ::selection {
   color: rgb(0, 0, 0);
   background-color: #ffffff;
 }
+
 body {
   z-index: 2;
   display: flex;
@@ -123,7 +110,7 @@ main {
   justify-content: center;
 }
 
-.video {
+#video {
   width: 100%;
   height: 320px;
   box-sizing: border-box;
@@ -390,7 +377,7 @@ li {
   .nav-img {
     height: 30px;
   }
-  .video {
+  #video {
     width: 90%;
     height: 300px;
     margin: auto;
