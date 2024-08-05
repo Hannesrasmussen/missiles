@@ -56,30 +56,39 @@ fetch(url2)
       const gigsCollapseable = document.getElementById('gigs-collapseable');
       gigsCollapseable.innerHTML = ''; // Clear existing content
 
+      console.log(rows);
+
       rows.forEach((row) => {
         const city = row.c[1]?.v || 'TBA';
         const date = row.c[2]?.v || 'TBA';
         const venue = row.c[3]?.v || 'TBA';
         const ticketLink = row.c[4]?.v || '#';
 
-        const gigElement = document.createElement('div');
-        gigElement.className = 'modal-gig';
-        gigElement.innerHTML = `
-          <span class="modal-collapseable-date">${date}</span>
-          <div class="modal-collapseable-main-info">
-            <div class="modal-collapseable-city">${city}</div>
-            <div class="modal-collapseable-venue">${venue}</div>
-          </div>
-          <div class="modal-collapseable-tickets">
-            ${
-              ticketLink === '#'
-                ? '<span>No tickets yet</span>'
-                : `<a target="_blank" href="${ticketLink}">Buy Tickets</a>`
-            }
-          </div>
-        `;
-
-        gigsCollapseable.appendChild(gigElement);
+        // Check if all values are TBA or null
+        if (
+          city !== 'TBA' ||
+          date !== 'TBA' ||
+          venue !== 'TBA' ||
+          ticketLink !== '#'
+        ) {
+          const gigElement = document.createElement('div');
+          gigElement.className = 'modal-gig';
+          gigElement.innerHTML = `
+            <span class="modal-collapseable-date">${date}</span>
+            <div class="modal-collapseable-main-info">
+              <div class="modal-collapseable-city">${city}</div>
+              <div class="modal-collapseable-venue">${venue}</div>
+            </div>
+            <div class="modal-collapseable-tickets">
+              ${
+                ticketLink === '#'
+                  ? '<span>No tickets yet</span>'
+                  : `<a target="_blank" href="${ticketLink}">Buy Tickets</a>`
+              }
+            </div>
+          `;
+          gigsCollapseable.appendChild(gigElement);
+        }
       });
     }
   })
